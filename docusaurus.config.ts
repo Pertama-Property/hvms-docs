@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'HVMS Documentation',
   tagline: 'Hotel and Villa Management System',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.jpg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -71,23 +71,22 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'HVMS Docs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Pertama Logo',
+        src: 'img/logo.jpg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Get Started',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/pertama-property/hvms-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -95,53 +94,25 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      links: [],
+      copyright: `Copyright © ${new Date().getFullYear()} Pertama Hotel and Villa Management.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    algolia: {
+      appId: 'O9OK3PMDML',
+      apiKey: 'c5f6b3407de50cdb633fb9c0c504c745',
+      indexName: 'hvms',
+      contextualSearch: true,
+      replaceSearchResultPathname: {
+        from: '/docs/',
+        to: '/',
+      },
+      searchParameters: {},
+      searchPagePath: 'search',
+    }
   } satisfies Preset.ThemeConfig,
 };
 

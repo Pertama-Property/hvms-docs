@@ -1,0 +1,8 @@
+{
+  "label": "Module - Master Data",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "A module to setup room, room type and any other base setup for the managed property"
+  }
+}

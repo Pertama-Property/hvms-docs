@@ -1,0 +1,8 @@
+{
+  "label": "Module - Report",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "A module that contains all report needed by management"
+  }
+}

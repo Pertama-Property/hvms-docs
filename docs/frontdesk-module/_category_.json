@@ -1,0 +1,8 @@
+{
+  "label": "Module - Front Desk",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "description": "Module to maintain checkin/checkout and other front office activity"
+  }
+}

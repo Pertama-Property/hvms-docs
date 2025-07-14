@@ -1,0 +1,8 @@
+{
+  "label": "Module - Housekeeping",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "A module to handle room status"
+  }
+}
