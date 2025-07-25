@@ -36,6 +36,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: ['drawio'],
+
   presets: [
     [
       'classic',
@@ -104,12 +106,8 @@ const config: Config = {
     algolia: {
       appId: 'O9OK3PMDML',
       apiKey: 'c5f6b3407de50cdb633fb9c0c504c745',
-      indexName: 'hvms',
+      indexName: 'hvms-docsPertama HVMS Documentation',
       contextualSearch: true,
-      replaceSearchResultPathname: {
-        from: '/docs/',
-        to: '/',
-      },
       searchParameters: {},
       searchPagePath: 'search',
     }

@@ -1,0 +1,9 @@
+import Drawio from '@theme/Drawio'
+import masterDataEntity from '!!raw-loader!./hvms-masterdata.drawio';
+
+# Entities
+
+Masterdata modules contains these entities, which are prepared before any transaction can happen in the system.
+These entities should already contains some default value (inserted upon installation). Later, it should be able to be deactivated if it is unused or it can be manually added from the UI when the item does not exist yet.
+
+<Drawio content={masterDataEntity} />
